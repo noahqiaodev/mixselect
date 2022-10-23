@@ -1,26 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+
+import { Select } from 'antd'
+import React from 'react'
+import MixSelect from './components/MixSelect'
+import Test from './components/Test'
+import { Button } from 'antd'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <MixSelect />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -1,0 +1,74 @@
+.SelectOption:hover {
+  background-color: transparentize(#38e0d7, 0.8) !important;
+}
+
+.Select {
+  display: flex;
+
+  .ant-select-selector {
+    border-radius: 8px;
+  }
+
+  .ant-select-selector {
+    flex: 1;
+
+    &:hover,
+    &:active {
+      border: 1px solid #38e0d7 !important;
+    }
+  }
+
+  &.ant-select-focused {
+    .ant-select-selector {
+      border: 1px solid #38e0d7 !important;
+      box-shadow: none !important;
+    }
+  }
+}
+
+.ant-checkbox {
+
+  .ant-checkbox-wrapper:hover &-inner,
+  &:hover &-inner,
+  &-input:focus+&-inner {
+    border-color: #38e0d7;
+  }
+
+  &-checked::after {
+    border: 1px solid #38e0d7;
+  }
+}
+
+.ant-checkbox-indeterminate .ant-checkbox-inner::after {
+  background-color: #38e0d7 !important;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #38e0d7;
+  border-color: #38e0d7;
+}
+
+.ant-radio {
+
+  .ant-radio-wrapper:hover &,
+  &:hover .ant-radio-inner,
+  &-input:focus+.ant-radio-inner {
+    border-color: #38e0d7;
+  }
+
+  &-inner {
+    &::after {
+      background-color: #38e0d7;
+    }
+  }
+}
+
+.ant-radio-checked {
+  .ant-radio-inner {
+    border-color: #38e0d7;
+  }
+
+  &::after {
+    border-color: #38e0d7;
+  }
+}
